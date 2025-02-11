@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Distribute blocks evenly */
+    align-items: flex-start; /* Align blocks to the top */
+    padding: 20px;
+    min-height: 100vh; /* Ensure container takes full viewport height */
+}
+
+.block {
+    width: 30%; /* Each block takes roughly 30% width */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+    overflow: hidden;
+    transition: transform 0.2s; /* Add a transition for hover effect */
+}
+
+.block:hover {
+    transform: translateY(-5px); /* Move slightly up on hover */
+}
+
+.academics {
+    background-color: #bbdefb; /* Slightly darker blue */
+    border: 1px solid #64b5f6; /* Darker blue border */
+}
+
+.meetings {
+    background-color: #c8e6c9; /* Slightly darker green */
+    border: 1px solid #81c784; /* Darker green border */
+}
+
+.examinations {
+    background-color: #fff59d; /* Slightly darker yellow */
+    border: 1px solid #ffee58; /* Darker yellow border */
+}
+
+.block h2 {
+    margin-bottom: 10px;
+    cursor: pointer; /* Make the heading clickable */
+}
+
+.options {
+    display: none; /* Initially hide the options */
+    margin-top: 10px;
+}
+
+.options a {
+    display: block; /* Make links stack vertically */
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333; /* Darker text color */
+    transition: background-color 0.2s;
+}
+
+.options a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light gray background on hover */
+    color: #007bff; /* Blue on hover */
+}
+
+
+/* Optional: Style the links to look like buttons */
+.options a.button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    text-align: center;
+}
+
+.options a.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
