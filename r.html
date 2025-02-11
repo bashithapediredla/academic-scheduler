@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Reminders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            gap: 20px;
+        }
+        .box {
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        .past {
+            background-color: green;
+        }
+        .present {
+            background-color: yellow;
+            color: black;
+        }
+        .future {
+            background-color: red;
+        }
+        .meeting {
+            background: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            color: black;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Meeting Reminders</h2>
+    <div class="container">
+        <!-- Past Meetings -->
+        <div class="box past">
+            <h3>✅ Past Meetings</h3>
+            <div class="meeting">CRC Meeting - 1st Feb</div>
+            <div class="meeting">DDC Meeting - 5th Feb</div>
+        </div>
+
+        <!-- Present Meetings -->
+        <div class="box present">
+            <h3>🟡 Ongoing Meetings</h3>
+            <div class="meeting">PAQIC Meeting - 11th Feb</div>
+        </div>
+
+        <!-- Future Meetings -->
+        <div class="box future">
+            <h3>🔴 Upcoming Meetings</h3>
+            <div class="meeting">BOS Meeting - 20th Feb</div>
+        </div>
+    </div>
+
+</body>
+</html>
